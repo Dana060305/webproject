@@ -3,9 +3,11 @@
 {% block content %}
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <title>{{ title }}</title>
+<meta name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<title>{{ title }}</title>
 
 <style>
 * {box-sizing: border-box;}
@@ -107,67 +109,77 @@ border-radius: 20px;
 hr {
 border-width: 5px;
 }
+
 </style>
 <body>
 <div class="fon">
-<img src="static/img/adygeya_text.png"/>
-<div class="slideshow-container">
+    <img src="static/img/adygeya_text.png"/>
+    <div class="slideshow-container">
 
-<div class="mySlides fade">
-  <div class="numbertext">1 / 9</div>
-  <img src="static/img/places/Республика Адыгея/adygeya_1.jpg" style="width:100%">
-</div>
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 9</div>
+            <img src="static/img/places/Республика Адыгея/adygeya_1.jpg"
+                 style="width:100%">
+        </div>
 
-<div class="mySlides fade">
-  <div class="numbertext">2 / 9</div>
-  <img src="static/img/places/Республика Адыгея/adygeya_2.jpg" style="width:100%">
-</div>
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 9</div>
+            <img src="static/img/places/Республика Адыгея/adygeya_2.jpg"
+                 style="width:100%">
+        </div>
 
-<div class="mySlides fade">
-  <div class="numbertext">3 / 9</div>
-  <img src="static/img/places/Республика Адыгея/adygeya_3.jpg" style="width:100%">
-</div>
-<div class="mySlides fade">
-  <div class="numbertext">4 / 9</div>
-  <img src="static/img/places/Республика Адыгея/adygeya_4.jpg" style="width:100%">
-</div>
-<div class="mySlides fade">
-  <div class="numbertext">5 / 9</div>
-  <img src="static/img/places/Республика Адыгея/adygeya_5.jpg" style="width:100%">
-</div>
-<div class="mySlides fade">
-  <div class="numbertext">6 / 9</div>
-  <img src="static/img/places/Республика Адыгея/adygeya_6.jpg" style="width:100%">
-</div>
-<div class="mySlides fade">
-  <div class="numbertext">7 / 9</div>
-  <img src="static/img/places/Республика Адыгея/adygeya_7.jpg" style="width:100%">
-</div>
-<div class="mySlides fade">
-  <div class="numbertext">8 / 9</div>
-  <img src="static/img/places/Республика Адыгея/adygeya_8.jpg" style="width:100%">
-</div>
-<div class="mySlides fade">
-  <div class="numbertext">9 / 9</div>
-  <img src="static/img/places/Республика Адыгея/adygeya_9.jpg" style="width:100%">
-</div>
-</div>
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 9</div>
+            <img src="static/img/places/Республика Адыгея/adygeya_3.jpg"
+                 style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 9</div>
+            <img src="static/img/places/Республика Адыгея/adygeya_4.jpg"
+                 style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 9</div>
+            <img src="static/img/places/Республика Адыгея/adygeya_5.jpg"
+                 style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">6 / 9</div>
+            <img src="static/img/places/Республика Адыгея/adygeya_6.jpg"
+                 style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">7 / 9</div>
+            <img src="static/img/places/Республика Адыгея/adygeya_7.jpg"
+                 style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">8 / 9</div>
+            <img src="static/img/places/Республика Адыгея/adygeya_8.jpg"
+                 style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">9 / 9</div>
+            <img src="static/img/places/Республика Адыгея/adygeya_9.jpg"
+                 style="width:100%">
+        </div>
+    </div>
 
-<br>
+    <br>
 
-<div style="text-align:center">
-  <span class="dot"></span>
-  <span class="dot"></span>
-  <span class="dot"></span>
-  <span class="dot"></span>
-  <span class="dot"></span>
-  <span class="dot"></span>
-  <span class="dot"></span>
-  <span class="dot"></span>
-  <span class="dot"></span>
-</div>
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
 
-<script>
+    <script>
 var slideIndex = 0;
 showSlides();
 
@@ -187,11 +199,13 @@ function showSlides() {
     dots[slideIndex-1].className += " active";
     setTimeout(showSlides, 3000);
 }
-</script>
-<div class="info">
-    {{ information }}
-</div>
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=40d1649f-0493-4b70-98ba-98533de7710b&lang=ru_RU" type="text/javascript">
+
+    </script>
+    <div class="info">
+        {{ information }}
+    </div>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=40d1649f-0493-4b70-98ba-98533de7710b&lang=ru_RU"
+            type="text/javascript">
     </script>
     <script type="text/javascript">
         ymaps.ready(init);
@@ -201,47 +215,51 @@ function showSlides() {
                 zoom: 7
             });
         }
+
     </script>
     <div style="display: flex; justify-content: space-evenly;">
-    <div id="map" style="width: 400px; height: 300px;"></div>
-    <div>
-        <p style="font-size: 20px;">Погода в Республике Адыгея сейчас</p>
-        <img src="{{ weather[2] }}"/>
-    {{ weather[0] }}
-    {{ weather[1] }}
-    </div>
+        <div id="map" style="width: 400px; height: 300px;"></div>
+        <div>
+            <p style="font-size: 20px;">Погода в Республике Адыгея сейчас</p>
+            <img src="{{ weather[2] }}"/>
+            {{ weather[0] }}
+            {{ weather[1] }}
+        </div>
     </div>
     <form action="" method="post">
         <div class="rev">
-        <h1>Отзывы путешественников</h1>
-        {% if not current_user.is_authenticated %}
+            <h1>Отзывы путешественников</h1>
+            {% if not current_user.is_authenticated %}
             {% for i in data %}
-                  <div class="container">
-                      <img src={{i[2]}} alt="avatar">
-                      <div style="text-align: left; margin-left: 1%; float: left; max-width: 80%;">
-                          <b><p><span>{{ i[0] }}</span></p></b>
-                      <p>{{i[1]}}</p>
-                      </div>
-                  </div><hr>
+            <div class="container">
+                <img src={{i[2]}} alt="avatar">
+                <div style="text-align: left; margin-left: 1%; float: left; max-width: 80%;">
+                    <b><p><span>{{ i[0] }}</span></p></b>
+                    <p>{{i[1]}}</p>
+                </div>
+            </div>
+            <hr>
             {% endfor %}
             <div class="alert alert-danger" role="alert">
                 <a>Чтобы оставлять отзывы, вы должны авторизоваться</a>
             </div>
-        {% endif %}
+            {% endif %}
 
-        {% if current_user.is_authenticated %}
-           {% for i in data %}
-                  <div class="container">
-                      <img src={{i[2]}} alt="avatar">
-                      <div style="text-align: left; margin-left: 1%; float: left; max-width: 80%;">
-                          <b><p><span>{{ i[0] }}</span></p></b>
-                      <p>{{i[1]}}</p>
-                      </div>
-                  </div><hr>
+            {% if current_user.is_authenticated %}
+            {% for i in data %}
+            <div class="container">
+                <img src={{i[2]}} alt="avatar">
+                <div style="text-align: left; margin-left: 1%; float: left; max-width: 80%;">
+                    <b><p><span>{{ i[0] }}</span></p></b>
+                    <p>{{i[1]}}</p>
+                </div>
+            </div>
+            <hr>
             {% endfor %}
-            <p>{{ form.text(class="form-control", placeholder="Текст", style="margin: 0 0 2% 0;") }}</p>
+            <p>{{ form.text(class="form-control", placeholder="Текст",
+                style="margin: 0 0 2% 0;") }}</p>
             <p>{{ form.submit(type="submit", style="margin: 0 0 2% 0;") }}</p>
-        {% endif %}
+            {% endif %}
         </div>
     </form>
 </div>

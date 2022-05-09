@@ -9,7 +9,8 @@ from data.db_session import SqlAlchemyBase
 class Place(SqlAlchemyBase, UserMixin):
     __tablename__ = 'places'
 
-    id = sqlalchemy.Column(sqlalchemy.Integer, primary_key=True, autoincrement=True)
+    id = sqlalchemy.Column(sqlalchemy.Integer, primary_key=True,
+                           autoincrement=True)
     name = sqlalchemy.Column(sqlalchemy.String, nullable=True)
     info = sqlalchemy.Column(sqlalchemy.String, nullable=True)
 

@@ -1,41 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <link rel="shortcut icon" href="static/img/plane.png" type="image/x-icon">
+    <link rel="shortcut icon" href="static/img/plane.png" type="image/x-icon">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <title>{{ title }}</title>
     {% if current_user.is_authenticated %}
-        <ul class="fail">
-          <li class="fall" style="float: left;">
-              <img class='icon' src="static/img/plane.png"><img src="static/img/image.png"></li>
-          <li class="fall"><a href="/profile">
-              <img class='photos' src="static/img/user.png"> МОЙ ПРОФИЛЬ</a></li>
-          <li class="fall"><a href="/about_me">
-              <img class='exit' src="static/img/message.png"> ОБО МНЕ</a></li>
-          <li class="fall"><a href="/">
-              <img class='photos' src="static/img/menu.png"> ГЛАВНАЯ</a></li>
-          <li class="fall"><a class="btn btn-success" href="/exit">
-              <img class='exit' src="static/img/exit.png"> ВЫЙТИ</a></li>
-        </ul>
+    <ul class="fail">
+        <li class="fall" style="float: left;">
+            <img class='icon' src="static/img/plane.png"><img
+                src="static/img/image.png"></li>
+        <li class="fall"><a href="/profile">
+            <img class='photos' src="static/img/user.png"> МОЙ ПРОФИЛЬ</a></li>
+        <li class="fall"><a href="/about_me">
+            <img class='exit' src="static/img/message.png"> ОБО МНЕ</a></li>
+        <li class="fall"><a href="/">
+            <img class='photos' src="static/img/menu.png"> ГЛАВНАЯ</a></li>
+        <li class="fall"><a class="btn btn-success" href="/exit">
+            <img class='exit' src="static/img/exit.png"> ВЫЙТИ</a></li>
+    </ul>
     {% endif %}
     {% if not current_user.is_authenticated %}
-        <ul class="fail">
-          <li class="fall" style="float: left;">
-              <img class='icon' src="static/img/plane.png"><img src="static/img/image.png"></li>
-          <li class="fall">
-              <a href="/register"><img class="exit" src="static/img/add_user.png"> РЕГИСТРАЦИЯ</a></li>
-          <li class="fall"><a href="/about_me">
-              <img class='exit' src="static/img/message.png"> ОБО МНЕ</a></li>
-          <li class="fall"><a href="/">
-              <img class='photos' src="static/img/menu.png"> ГЛАВНАЯ</a></li>
-          <li class="fall"><a href="/login">
-              <img class="exit" src="static/img/login.png"> АВТОРИЗАЦИЯ</a></li>
-        </ul>
+    <ul class="fail">
+        <li class="fall" style="float: left;">
+            <img class='icon' src="static/img/plane.png"><img
+                src="static/img/image.png"></li>
+        <li class="fall">
+            <a href="/register"><img class="exit" src="static/img/add_user.png">
+                РЕГИСТРАЦИЯ</a></li>
+        <li class="fall"><a href="/about_me">
+            <img class='exit' src="static/img/message.png"> ОБО МНЕ</a></li>
+        <li class="fall"><a href="/">
+            <img class='photos' src="static/img/menu.png"> ГЛАВНАЯ</a></li>
+        <li class="fall"><a href="/login">
+            <img class="exit" src="static/img/login.png"> АВТОРИЗАЦИЯ</a></li>
+    </ul>
     {% endif %}
 
 </head>
@@ -118,6 +123,7 @@ ul li a{
     text-align: left;
     margin: 5%;
 }
+
 </style>
 <body>
 <div align="center">

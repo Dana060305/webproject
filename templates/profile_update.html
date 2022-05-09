@@ -25,52 +25,57 @@
   padding: 15px;
   background: #ebeeef;
 }
+
 </style>
 <title>Редактирование профиля</title>
-    <div style="background: #ebeeef;">
-<h1>Обновление профиля</h1>
-<p>Чтобы изменить данные:</p>
-<p>1. Заполните поля, которые Вы хотите изменить</p>
-<p>2. Введите старый пароль </p>
-<p>3. Нажмите кнопку 'Изменить'</p>
-        <div class="register">
-    <div class="reg">
+<div style="background: #ebeeef;">
+    <h1>Обновление профиля</h1>
+    <p>Чтобы изменить данные:</p>
+    <p>1. Заполните поля, которые Вы хотите изменить</p>
+    <p>2. Введите старый пароль </p>
+    <p>3. Нажмите кнопку 'Изменить'</p>
+    <div class="register">
+        <div class="reg">
             <img class='photo' src='static/img/register.jpg'>
-    <form action="" method="post">
-    {{ form.hidden_tag() }}
-    {{ form.csrf_token }}
-            {{ form.email.label }}<br>
-            {{ form.email(class="form-control", type="email", placeholder="Email") }}<br>
+            <form action="" method="post">
+                {{ form.hidden_tag() }}
+                {{ form.csrf_token }}
+                {{ form.email.label }}<br>
+                {{ form.email(class="form-control", type="email",
+                placeholder="Email") }}<br>
                 {% for error in form.email.errors %}
-                    <div class="alert alert-danger" role="alert">
-                            {{ error }}
-                    </div>
+                <div class="alert alert-danger" role="alert">
+                    {{ error }}
+                </div>
                 {% endfor %}
-            {{ form.password.label }}<br>
-{{ form.password(class="form-control", type="password", placeholder="Старый пароль") }}<br>
+                {{ form.password.label }}<br>
+                {{ form.password(class="form-control", type="password",
+                placeholder="Старый пароль") }}<br>
                 {% for error in form.password.errors %}
-                    <div class="alert alert-danger" role="alert">
-                        {{ error }}
-                    </div>
+                <div class="alert alert-danger" role="alert">
+                    {{ error }}
+                </div>
                 {% endfor %}
-            {{ form.password_new.label }}<br>
-{{ form.password_new(class="form-control", type="password", placeholder="Новый пароль") }}<br>
+                {{ form.password_new.label }}<br>
+                {{ form.password_new(class="form-control", type="password",
+                placeholder="Новый пароль") }}<br>
                 {% for error in form.password_new.errors %}
-                    <div class="alert alert-danger" role="alert">
-                        {{ error }}
-                    </div>
+                <div class="alert alert-danger" role="alert">
+                    {{ error }}
+                </div>
                 {% endfor %}
-            {{ form.telephone.label }}<br>
-            {{ form.telephone(class="form-control", type="string", placeholder="Телефон") }}<br>
+                {{ form.telephone.label }}<br>
+                {{ form.telephone(class="form-control", type="string",
+                placeholder="Телефон") }}<br>
                 {% for error in form.telephone.errors %}
-                    <div class="alert alert-danger" role="alert">
-                        {{ error }}
-                    </div>
+                <div class="alert alert-danger" role="alert">
+                    {{ error }}
+                </div>
                 {% endfor %}
-        <p>{{ form.submit(type="submit", class="btn btn-success") }}</p>
-        <div>{{ message }}</div>
-    </form>
-    </div>
+                <p>{{ form.submit(type="submit", class="btn btn-success") }}</p>
+                <div>{{ message }}</div>
+            </form>
         </div>
     </div>
+</div>
 {% endblock %}
