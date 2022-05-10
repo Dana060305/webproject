@@ -83,7 +83,7 @@ def profile_update():
                 user.telephone = form.telephone.data
             sessions.add(user)
             sessions.commit()
-            return render_template('profile.html', title='Обновление профиля',
+            return render_template('Profile.html', title='Обновление профиля',
                                    form=form,
                                    message='Данные успешно изменены', user=user)
         return render_template('profile_update.html',
